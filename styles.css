@@ -1,0 +1,117 @@
+/* CSS code for header background image */
+body{
+    margin:0;
+    padding:0;
+}
+header {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:15cm;
+    background-image: url('background.jpg'); /* Path to your header background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    color: white; /* Set text color to white for better visibility on background image */
+    text-align: center;
+    padding: 50px 0;
+}
+header h1{
+    position :absolute;
+    top:3cm;
+    left:2cm;
+    text-transform: capitalize;
+    font-family: cursive;
+    font-size: 60px;
+    padding-bottom:1cm;
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    color: transparent;
+    background-image: linear-gradient(to right, #ff6b6b, #556270);
+    
+}
+header h2{
+    position:absolute;
+    top:6cm;
+    left:2cm;
+    font-size:40px;
+    color:rgb(218, 197, 3)
+}
+
+/* CSS code for slider */
+.slider {
+    width: 500px; /* Set the width of the slider */
+    height: 300px; /* Set the height of the slider */
+    overflow: hidden;
+    position: absolute; /* or absolute, depending on your preference */
+    top: 50%; /* Adjust vertically as needed */
+    transform: translateY(-50%);
+    right: 20px; /* Adjust the distance from the right side */
+    background-color:rgb(97, 199, 240);
+    border-radius: 100px;
+}
+
+.header{
+    margin:0;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease; /* Transition effect for opacity */
+    mix-blend-mode: multiply;
+}
+
+.slide.active {
+    opacity: 1;
+    filter: blur(0); /* Remove blur effect when active */
+}
+
+.container{
+    height:4cm;
+    background-color: black;
+    margin-top:-50px;
+    padding:0;
+}
+.container h1 {
+    color:white;
+    padding:50px;
+}
+
+.links{
+    display: inline-block; /* Display divs inline */
+    margin-right: 20px;
+    position: absolute;
+    top:10cm;
+    left:5%;
+    padding:0;
+    margin:0;
+}
+.links p, .links a {
+    display: inline; /* Display paragraphs and links inline */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+.links p1{
+    color:black;
+    font-size:20px;
+}
+.links a{
+    position: absolute;
+    border:2px solid red;
+    padding:5px;
+    color:white;
+    border-radius:10px;
+    margin:10px;
+    background-color:red;
+    text-decoration: none;
+}
+.links a:hover{
+    background-color:transparent;
+
+    left:6cm;
+
+}
